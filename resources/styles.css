@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-size: 24px;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pexels-markusspiske-1089438.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(40%);
+    z-index: -1;
+}
+.table-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid green;
+    display: inline-block;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th {
+    padding: 5px;
+    text-align: center;
+    min-width: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+th.s_c {
+    border-bottom: 3px white solid;
+}
+th.code {
+    border-right: 3px white solid;
+    border-left: 3px white solid;
+    border-bottom: 3px white solid;
+}
+th.name {
+    border-right: 3px white solid;
+    border-left: 3px white solid;
+    border-bottom: 3px white solid;
+}
+th.descri {
+    border-right: 3px white solid;
+    border-left: 3px white solid;
+    border-bottom: 3px white solid;
+}
+th.repla {
+    border-bottom: 3px white solid;
+}
+td {
+    border: 1px white solid;
+    text-align: left;
+    padding: 5px;
+    border-bottom: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+td.s_c {
+    border-left: none;
+}
+td.repla {
+    border-right: none;
+}
+.s_c {
+    text-align: center;
+}
+.code {
+    min-width: 105px;
+}
+.name {
+    min-width: 75px;
+    padding: 10px;
+}
+.descri {
+    width: 800px;
+}
+.repla {
+    width: 150px;
+}
+.tabsec {
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    text-align: left;
+}
