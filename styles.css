@@ -53,7 +53,7 @@ th.descri {
     border-left: 3px white solid;
     border-bottom: 3px white solid;
 }
-th.repla {
+th.note {
     border-bottom: 3px white solid;
 }
 td {
@@ -67,7 +67,7 @@ td {
 td.s_c {
     border-left: none;
 }
-td.repla {
+td.note {
     border-right: none;
 }
 .s_c {
@@ -83,7 +83,7 @@ td.repla {
 .descri {
     width: 800px;
 }
-.repla {
+.note {
     width: 150px;
 }
 .tabsec {
