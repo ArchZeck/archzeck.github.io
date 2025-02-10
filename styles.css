@@ -46,33 +46,33 @@ th {
 }
 
 th.s_c {
-    border-bottom: 3px white solid;
+    border-bottom: 3px rgb(32, 94, 35) solid;
 }
 
 th.code {
-    border-right: 3px white solid;
-    border-left: 3px white solid;
-    border-bottom: 3px white solid;
+    border-right: 3px rgb(32, 94, 35);
+    border-left: 3px rgb(32, 94, 35);
+    border-bottom: 3px rgb(32, 94, 35);
 }
 
 th.name {
-    border-right: 3px white solid;
-    border-left: 3px white solid;
-    border-bottom: 3px white solid;
+    border-right: 3px rgb(32, 94, 35);
+    border-left: 3px rgb(32, 94, 35);
+    border-bottom: 3px rgb(32, 94, 35);
 }
 
 th.descri {
-    border-right: 3px white solid;
-    border-left: 3px white solid;
-    border-bottom: 3px white solid;
+    border-right: 3px rgb(32, 94, 35);
+    border-left: 3px rgb(32, 94, 35);
+    border-bottom: 3px rgb(32, 94, 35);
 }
 
 th.note {
-    border-bottom: 3px white solid;
+    border-bottom: 3px rgb(32, 94, 35);
 }
 
 td {
-    border: 1px white solid;
+    border: 1px rgb(32, 94, 35);
     text-align: left;
     padding: 5px;
     border-bottom: none;
@@ -130,7 +130,7 @@ a {
 
 .breadcrumb a {
     color: #fff;
-    background: darkcyan;
+    background: green;
     text-decoration: none;
     position: relative;
     height: 30px;
@@ -144,7 +144,7 @@ a {
 .breadcrumb a::after {
     content: "";
     position: absolute;
-    border-color: darkcyan;
+    border-color: green;
     border-style: solid;
     border-width: 15px 5px;
 }
@@ -157,18 +157,17 @@ a {
 .breadcrumb a::after {
     left: 100%;
     border-color: transparent;
-    border-left-color: darkcyan;
+    border-left-color: green;
 }
 
 .breadcrumb a:hover {
-    background-color: blue;
+    background-color: greenyellow;
 }
 
 .breadcrumb a:hover::before {
-    border-color: blue;
+    border-color: greenyellow;
     border-left-color: transparent;
 }
 
 .breadcrumb a:hover::after {
-    border-left-color: blue;
-}
+    border-left-color: greenyellow;
