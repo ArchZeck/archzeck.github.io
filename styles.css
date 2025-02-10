@@ -46,33 +46,33 @@ th {
 }
 
 th.s_c {
-    border-bottom: 3px rgb(32, 94, 35) solid;
+    border-bottom: 3px darkolivegreen solid;
 }
 
 th.code {
-    border-right: 3px rgb(32, 94, 35);
-    border-left: 3px rgb(32, 94, 35);
-    border-bottom: 3px rgb(32, 94, 35);
+    border-right: 3px darkolivegreen;
+    border-left: 3px darkolivegreen;
+    border-bottom: 3px darkolivegreen;
 }
 
 th.name {
-    border-right: 3px rgb(32, 94, 35);
-    border-left: 3px rgb(32, 94, 35);
-    border-bottom: 3px rgb(32, 94, 35);
+    border-right: 3px darkolivegreen;
+    border-left: 3px darkolivegreen;
+    border-bottom: 3px darkolivegreen;
 }
 
 th.descri {
-    border-right: 3px rgb(32, 94, 35);
-    border-left: 3px rgb(32, 94, 35);
-    border-bottom: 3px rgb(32, 94, 35);
+    border-right: 3px darkolivegreen;
+    border-left: 3px darkolivegreen;
+    border-bottom: 3px darkolivegreen;
 }
 
 th.note {
-    border-bottom: 3px rgb(32, 94, 35);
+    border-bottom: 3px darkolivegreen;
 }
 
 td {
-    border: 1px rgb(32, 94, 35);
+    border: 1px darkolivegreen;
     text-align: left;
     padding: 5px;
     border-bottom: none;
