@@ -1,8 +1,3 @@
-
-nav {
-    display: box;
-}
-
 body {
     margin: 0;
     height: 100vh;
@@ -50,29 +45,29 @@ th.s_c {
 }
 
 th.code {
-    border-right: 3px darkolivegreen;
-    border-left: 3px darkolivegreen;
-    border-bottom: 3px darkolivegreen;
+    border-right: 3px darkolivegreen solid;
+    border-left: 3px darkolivegreen solid;
+    border-bottom: 3px darkolivegreen solid;
 }
 
 th.name {
-    border-right: 3px darkolivegreen;
-    border-left: 3px darkolivegreen;
-    border-bottom: 3px darkolivegreen;
+    border-right: 3px darkolivegreen solid;
+    border-left: 3px darkolivegreen solid;
+    border-bottom: 3px darkolivegreen solid;
 }
 
 th.descri {
-    border-right: 3px darkolivegreen;
-    border-left: 3px darkolivegreen;
-    border-bottom: 3px darkolivegreen;
+    border-right: 3px darkolivegreen solid;
+    border-left: 3px darkolivegreen solid;
+    border-bottom: 3px darkolivegreen solid;
 }
 
 th.note {
-    border-bottom: 3px darkolivegreen;
+    border-bottom: 3px darkolivegreen solid;
 }
 
 td {
-    border: 1px darkolivegreen;
+    border: 1px darkolivegreen solid;
     text-align: left;
     padding: 5px;
     border-bottom: none;
@@ -120,6 +115,7 @@ a {
     box-shadow: 10px 5px 5px greenyellow;
     ;
 }
+
 .breadcrumb {
     text-align: left;
 }
