@@ -1,9 +1,67 @@
+.breadcrumb {
+    text-align: left;
+}
+
+.breadcrumb li {
+    float: left;
+}
+
+.breadcrumb a {
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+}
+
+.breadcrumb a::before,
+.breadcrumb a::after {
+    content: "";
+    position: absolute;
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 15px 5px;
+}
+
+.breadcrumb a::before {
+    left: -10px;
+    border-left-color: transparent;
+}
+
+.breadcrumb a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: darkcyan;
+}
+
+.breadcrumb a:hover {
+    background-color: blue;
+}
+
+.breadcrumb a:hover::before {
+    border-color: blue;
+    border-left-color: transparent;
+}
+
+.breadcrumb a:hover::after {
+    border-left-color: blue;
+}
+
+nav {
+    display: box;
+}
+
 body {
     margin: 0;
     height: 100vh;
     color: white;
     font-size: 24px;
 }
+
 body::before {
     content: "";
     position: fixed;
@@ -18,16 +76,19 @@ body::before {
     filter: brightness(40%);
     z-index: -1;
 }
+
 .table-wrapper {
     border-radius: 15px;
     overflow: hidden;
     border: 5px solid green;
     display: inline-block;
 }
+
 table {
     border-collapse: collapse;
     table-layout: fixed;
 }
+
 th {
     padding: 5px;
     text-align: center;
@@ -35,27 +96,33 @@ th {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 th.s_c {
     border-bottom: 3px white solid;
 }
+
 th.code {
     border-right: 3px white solid;
     border-left: 3px white solid;
     border-bottom: 3px white solid;
 }
+
 th.name {
     border-right: 3px white solid;
     border-left: 3px white solid;
     border-bottom: 3px white solid;
 }
+
 th.descri {
     border-right: 3px white solid;
     border-left: 3px white solid;
     border-bottom: 3px white solid;
 }
+
 th.note {
     border-bottom: 3px white solid;
 }
+
 td {
     border: 1px white solid;
     text-align: left;
@@ -64,31 +131,44 @@ td {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }
+
 td.s_c {
     border-left: none;
 }
+
 td.note {
     border-right: none;
 }
+
 .s_c {
     text-align: center;
 }
+
 .code {
     min-width: 105px;
 }
+
 .name {
     min-width: 75px;
     padding: 10px;
 }
+
 .descri {
     width: 800px;
 }
+
 .note {
     width: 150px;
 }
+
 .tabsec {
     border-left: none;
     border-right: none;
     font-weight: bold;
     text-align: left;
+}
+
+a {
+    box-shadow: 10px 5px 5px greenyellow;
+    ;
 }

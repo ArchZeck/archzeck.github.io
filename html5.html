@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>HTML in a nutshell</title>
+</head>
+
+<body>
+    <h1>HTML5 Reference</h1>
+
+    <div id="nav">
+        <ul class="breadcrumb">
+            <li class="location"><a href="./index.html">home</a></li>
+            <li class="attribute"><a href="#">HTML5</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="#semantictag">Semantic Placement Tags</a></li>
+            <li><a href="#embeddingtag">Embedding Media Tags</a></li>
+            <li><a href="#elementtag">Element Tags</a></li>
+            <li><a href="#tabletag">Tables tags</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="semantictag">Semantic Placement Tags</h2>
+    <div class="table-wrapper">
+        <table>
+        <thead>
+            <tr>
+                <th class="s_c">S-C</th>
+                <th class="code">Tag</th>
+                <th class="name">Name</th>
+                <th class="descri">Description</th>
+                <th class="note">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;header&gt;</td>
+                <td class="name">Header</td>
+                <td class="descri">The wrapper element for the header of your page. (max 1).</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;main&gt;</td>
+                <td class="name">Main</td>
+                <td class="descri">The wrapper element for the body of your page. (max 1).</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;footer&gt;</td>
+                <td class="name">Footer</td>
+                <td class="descri">The wrapper element for the footer of your page. (max 1).</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;nav&gt;</td>
+                <td class="name">Nav</td>
+                <td class="descri">The wrapper element for the navigation on your page (max 1 but more can be added with different aria-label).
+                </td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;section&gt;</td>
+                <td class="name">Section</td>
+                <td class="descri">The wrapper element for a section of your page.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;article&gt;</td>
+                <td class="name">Article</td>
+                <td class="descri">The wrapper element for an article inside a section.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;aside&gt;</td>
+                <td class="name">Aside</td>
+                <td class="descri">The wrapper element for an aside note inside a section.</td>
+                <td class="note"></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <h2 id="embeddingtag">Embedding Media Tags</h2>
+    <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th class="s_c">S-C</th>
+                <th class="code">Tag</th>
+                <th class="name">Name</th>
+                <th class="descri">Description</th>
+                <th class="note">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;video src=""&gt;</td>
+                <td class="name">Video</td>
+                <td class="descri">Allows to add video.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;audio src=""&gt;</td>
+                <td class="name">Audio</td>
+                <td class="descri">Allows to add video.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">V</td>
+                <td class="code">&lt;embed src=""/&gt;</td>
+                <td class="name">Embed</td>
+                <td class="descri">Allows to add any type of media. Self-closing, ATTENTION for the ending / here.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;figure&gt;</td>
+                <td class="name">Figure</td>
+                <td class="descri">Allows to encapsulate images, diagrams or code snippet.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">V</td>
+                <td class="code">&lt;img src=""&gt;</td>
+                <td class="name">Image</td>
+                <td class="descri">Allows to add image URL. Self-closing.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;figcaption&gt;</td>
+                <td class="name">Figcaption</td>
+                <td class="descri">Allows to add description that will follow along with the media.</td>
+                <td class="note"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <h2 id="elementtag">Element Tags</h2>
+    <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th class="s_c">S-C</th>
+                <th class="code">Tag</th>
+                <th class="name">Name</th>
+                <th class="descri">Description</th>
+                <th class="note">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan= "5" class="tabsec">Lists</td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;ol&gt;</td>
+                <td class="name">Ordered list</td>
+                <td class="descri">Creates a list with numbers.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;ul&gt;</td>
+                <td class="name">Unordered list</td>
+                <td class="descri">Creates a list with dots.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;li&gt;</td>
+                <td class="name">List item</td>
+                <td class="descri">Creates an entry in a list.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Basic styling</td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;h1&gt; - &lt;h6&gt;</td>
+                <td class="name">Heading element</td>
+                <td class="descri">The heading elements are ordered from the highest level, 1, to the lowest level, 6.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;span&gt;</td>
+                <td class="name">Span element</td>
+                <td class="descri">An inline container for text, makes precise styling with a class/id.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;p&gt;</td>
+                <td class="name">Paragraph</td>
+                <td class="descri">Contains and displays a block of text.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">V</td>
+                <td class="code">&lt;br&gt;</td>
+                <td class="name">Line Break</td>
+                <td class="descri">Creates a line break in text and requires only an opening tag. Self-closing.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;em&gt;</td>
+                <td class="name">Emphasis</td>
+                <td class="descri">Emphasizes text and browsers will usually italicize the emphasized text by default.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;strong&gt;</td>
+                <td class="name">Strong</td>
+                <td class="descri">Highlights important or urgent text and browsers will normally render this highlighted text in bold.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Link making</td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;a href="link"&gt;</td>
+                <td class="name">Anchor</td>
+                <td class="descri">Creates hyperlinks on what's linked inbetween opening and closing tag. Can be internal with #id instead of link</td>
+                <td class="note"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;a target=""&gt;</td>
+                <td class="name">Target attribute</td>
+                <td class="descri">Specifies where a hyperlink should be opened. _blank being new tab.</td>
+                <td class="note"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+ 
+    <h2 id="tabletag">Tables tags</h2>
+    <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th class="s_c">S-C</th>
+                <th class="code">Tag</th>
+                <th class="name">Name</th>
+                <th class="descri">Description</th>
+                <th class="note">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;table&gt;</td>
+                <td class="name">Table Element</td>
+                <td class="descri">Used to represent a two-dimensional table made of rows and columns.</td>
+                <td class="note">Can't have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;tr&gt;</td>
+                <td class="name">Table Row</td>
+                <td class="descri">Used to add rows to a table before adding table data or inside table headings</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;th&gt;</td>
+                <td class="name">Table Heading</td>
+                <td class="descri">Used to add titles to rows and columns of a table</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;td&gt;</td>
+                <td class="name">Table Data</td>
+                <td class="descri">Used to add a cell of data to a table.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Structure of a table</td>
+            </tr>
+                <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;thead&gt;</td>
+                <td class="name">Table Head element</td>
+                <td class="descri">Defines the headings of table columns encapsulated in table rows.</td>
+                <td class="note"></td>
+            </tr>
+                <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;tbody&gt;</td>
+                <td class="name">Table Body element</td>
+                <td class="descri">Is a semantic element that will contain all table data other than table heading and table footer content.</td>
+                <td class="note"></td>
+            </tr>
+                <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;tfoot&gt;</td>
+                <td class="name">Table Foot element</td>
+                <td class="descri">Uses table rows to give footer content or to summarize content at the end of a table.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Expansion of cells</td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;colspan&gt;</td>
+                <td class="name">Column Span</td>
+                <td class="descri">Defines how many columns a td element should span.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="s_c">X</td>
+                <td class="code">&lt;rowspan&gt;</td>
+                <td class="name">Row Span</td>
+                <td class="descri">Defines how many rows a td element should span.</td>
+                <td class="note"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+
+</html>
