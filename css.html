@@ -20,20 +20,21 @@
     <br>
     <br>
     <nav>
-        <ul>
+        <ol>
             <li><a href="#selectortag">Selector and Visual Rules</a></li>
+            <li><a href="#basictag">Base styling</a></li>
             <li><a href="#boxtag">Box Model</a></li>
             <li><a href="#displaytag">Display and positioning</a></li>
-            <li><a href="#fontstag">Fonts styling</a></li>
-        </ul>
+            <li><a href="#flextag">Flexbox</a></li>
+            <li><a href="#buttonstag">Links and Buttons</a></li>
+        </ol>
     </nav>
 
     <h2 id="selectortag">Selector and Visual Rules</h2>
-    <div class="table-wrapper">
+    <div class="table-wrapper selectortag">
         <table>
         <thead>
             <tr>
-                <th class="s_c">S-C</th>
                 <th class="code">Tag</th>
                 <th class="name">Name</th>
                 <th class="descri">Description</th>
@@ -42,53 +43,146 @@
         </thead>
         <tbody>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;header&gt;</td>
-                <td class="name">Header</td>
-                <td class="descri">The wrapper element for the header of your page. (max 1).</td>
+                <td colspan= "5" class="tabsec">Selectors</td>
+            </tr>
+            <tr>
+                <td class="code">selector</td>
+                <td class="name">Type selector</td>
+                <td class="descri">Selects all &lt;selector&gt; tags.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;main&gt;</td>
-                <td class="name">Main</td>
-                <td class="descri">The wrapper element for the body of your page. (max 1).</td>
+                <td class="code">.selector</td>
+                <td class="name">Class selector</td>
+                <td class="descri">Selects all elements with class="selector".</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;footer&gt;</td>
-                <td class="name">Footer</td>
-                <td class="descri">The wrapper element for the footer of your page. (max 1).</td>
+                <td class="code">#selector</td>
+                <td class="name">ID selector</td>
+                <td class="descri">Selects all elements with id="selector".</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;nav&gt;</td>
-                <td class="name">Nav</td>
-                <td class="descri">The wrapper element for the navigation on your page (max 1 but more can be added with different aria-label).
+                <td colspan= "5" class="tabsec">Selector manipulation</td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="descri">CSS selectors can be chained so that rule sets apply only to elements that match all criteria.</td>
+            </tr>
+            <tr>
+                <td class="code">type.cl</td>
+                <td class="name"></td>
+                <td class="descri">Select "type" elements with the "cl" class.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">.cl1.cl2 </td>
+                <td class="name"></td>
+                <td class="descri">Select elements with the cl1 AND cl2 class.
                 </td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;section&gt;</td>
-                <td class="name">Section</td>
-                <td class="descri">The wrapper element for a section of your page.</td>
+                <td colspan= "5" class="tabsec">CSS descendant selector</td>
+            </tr>
+            <tr>
+                <td class="code">div p { }</td>
+                <td class="name">Descendant</td>
+                <td class="descri">Is used to match elements that are descended from another matched selector.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;article&gt;</td>
-                <td class="name">Article</td>
-                <td class="descri">The wrapper element for an article inside a section.</td>
+                <td colspan= "5" class="tabsec">!important rule</td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="descri">!important rule is used on declarations to override any other declarations for a property and ignore selector specificity. </td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Typography</td>
+            </tr>
+            <tr>
+                <td class="code">@font-face {}</td>
+                <td class="name"></td>
+                <td class="descri">Allows external fonts or font files to be imported directly into stylesheets.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;aside&gt;</td>
-                <td class="name">Aside</td>
-                <td class="descri">The wrapper element for an aside note inside a section.</td>
+                <td class="code"></td>
+                <td class="name">font-family:</td>
+                <td class="descri">Name of the external font.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">src:</td>
+                <td class="descri">Allows external fonts or font files to be imported directly into stylesheets.</td>
+                <td class="note"></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <h2 id="basictag">Basic styling</h2>
+    <div class="table-wrapper basictag">
+        <table>
+        <thead>
+            <tr>
+                <th class="code">Property</th>
+                <th class="name">Name</th>
+                <th class="descri">Description</th>
+                <th class="note">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan= "5" class="tabsec">General</td>
+            </tr>
+            <tr>
+                <td class="code">font-family:</td>
+                <td class="name">Font type</td>
+                <td class="descri">Used to specify the typeface in a rule set.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">font-size:</td>
+                <td class="name">Font size</td>
+                <td class="descri">Used to set text sizes.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">font-weight:</td>
+                <td class="name">Boldness</td>
+                <td class="descri">Used to set the weight (boldness) of text</td>
+                <td class="note">normal/<span class="bold">bold</span></td>
+            </tr>
+            <tr>
+                <td class="code">text-align:</td>
+                <td class="name">Alignment</td>
+                <td class="descri">Used to set the text alignment of inline contents.</td>
+                <td class="note">left / center / right</td>
+            </tr>
+            <tr>
+                <td class="code">color:</td>
+                <td class="name">Text color</td>
+                <td class="descri">Used to set the foreground text color of an element.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">background-color:</td>
+                <td class="name">Background color</td>
+                <td class="descri">Used to set the background color of an element.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">background-image:</td>
+                <td class="name">Background image</td>
+                <td class="descri">Sets the background image of an element.</td>
+                <td class="note">url("../resources/image.png");</td>
+            </tr>
+            <tr>
+                <td class="code">opacity:</td>
+                <td class="name">Opacity</td>
+                <td class="descri">Controls the transparency of an element.</td>
                 <td class="note"></td>
             </tr>
         </tbody>
@@ -96,58 +190,63 @@
     </div>
 
     <h2 id="boxtag">Box Model</h2>
-    <div class="table-wrapper">
+    <div class="table-wrapper boxtag">
     <table>
         <thead>
             <tr>
-                <th class="s_c">S-C</th>
-                <th class="code">Tag</th>
-                <th class="name">Name</th>
+                <th class="code">Property</th>
+                <th class="name">Values</th>
                 <th class="descri">Description</th>
                 <th class="note">Note</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;video src=""&gt;</td>
-                <td class="name">Video</td>
-                <td class="descri">Allows to add video.</td>
+                <td class="code">box-sizing:</td>
+                <td class="name"></td>
+                <td class="descri">Controls which aspect of the box is determined by the height and width properties.</td>
+                <td class="note">Default value is content-box</td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">border-box</td>
+                <td class="descri">Is recommended when it is necessary to resize the padding and border but not just the content.</td>
+                <td class="note">element height = content height + padding + border</td>
+            </tr>
+            <tr>
+                <td class="code">margin:</td>
+                <td class="name"></td>
+                <td class="descri"></td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;audio src=""&gt;</td>
-                <td class="name">Audio</td>
-                <td class="descri">Allows to add video.</td>
+                <td class="code">padding:</td>
+                <td class="name"></td>
+                <td class="descri"></td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">V</td>
-                <td class="code">&lt;embed src=""/&gt;</td>
-                <td class="name">Embed</td>
-                <td class="descri">Allows to add any type of media. Self-closing, ATTENTION for the ending / here.</td>
+                <td class="code">overflow:</td>
+                <td class="name"></td>
+                <td class="descri">Will determine how the browser handles if content is too large for its container.</td>
+                <td class="note">visible/hidden/scroll</td>
+            </tr>
+            <tr>
+                <td class="code">height/width:</td>
+                <td class="name"></td>
+                <td class="descri">Used to set widths and heights for element boxes.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;figure&gt;</td>
-                <td class="name">Figure</td>
-                <td class="descri">Allows to encapsulate images, diagrams or code snippet.</td>
-                <td class="note"></td>
+                <td class="code">max-(height/width):</td>
+                <td class="name"></td>
+                <td class="descri">Used to set maximum widths and heights for element boxes.</td>
+                <td class="note">min exists aswel</td>
             </tr>
             <tr>
-                <td class="s_c">V</td>
-                <td class="code">&lt;img src=""&gt;</td>
-                <td class="name">Image</td>
-                <td class="descri">Allows to add image URL. Self-closing.</td>
-                <td class="note"></td>
-            </tr>
-            <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;figcaption&gt;</td>
-                <td class="name">Figcaption</td>
-                <td class="descri">Allows to add description that will follow along with the media.</td>
+                <td class="code">visibility:</td>
+                <td class="name"></td>
+                <td class="descri">Used to render hidden objects invisible to the user.</td>
                 <td class="note"></td>
             </tr>
         </tbody>
@@ -155,115 +254,262 @@
     </div>
 
     <h2 id="displaytag">Display and positioning</h2>
-    <div class="table-wrapper">
+    <div class="table-wrapper displaytag">
     <table>
         <thead>
             <tr>
-                <th class="s_c">S-C</th>
-                <th class="code">Tag</th>
-                <th class="name">Name</th>
+                <th class="code">Property</th>
+                <th class="name">Values</th>
                 <th class="descri">Description</th>
                 <th class="note">Note</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td colspan= "5" class="tabsec">Lists</td>
-            </tr>
-            <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;ol&gt;</td>
-                <td class="name">Ordered list</td>
-                <td class="descri">Creates a list with numbers.</td>
+                <td class="code">z-index:</td>
+                <td class="name"></td>
+                <td class="descri">specifies how far back or how far forward an element will appear on a web page</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;ul&gt;</td>
-                <td class="name">Unordered list</td>
-                <td class="descri">Creates a list with dots.</td>
+                <td class="code">position:</td>
+                <td class="name"></td>
+                <td class="descri">Provides options for positioning HTML elements on a page.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;li&gt;</td>
-                <td class="name">List item</td>
-                <td class="descri">Creates an entry in a list.</td>
+                <td class="code"></td>
+                <td class="name">fixed</td>
+                <td class="descri">Element stays the same regardless of scrolling.</td>
+                <td class="note">often used for nav bar.</td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">absolute</td>
+                <td class="descri">Removes an element entirely from the document flow.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td colspan= "5" class="tabsec">Basic styling</td>
-            </tr>
-            <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;h1&gt; - &lt;h6&gt;</td>
-                <td class="name">Heading element</td>
-                <td class="descri">The heading elements are ordered from the highest level, 1, to the lowest level, 6.</td>
+                <td class="code"></td>
+                <td class="name">relative</td>
+                <td class="descri">Enables an element to be positioned relative to where it would have originally been on a web page.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;span&gt;</td>
-                <td class="name">Span element</td>
-                <td class="descri">An inline container for text, makes precise styling with a class/id.</td>
+                <td class="code">display:</td>
+                <td class="name">Display</td>
+                <td class="descri">Determines the type of render block for an element.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;p&gt;</td>
-                <td class="name">Paragraph</td>
-                <td class="descri">Contains and displays a block of text.</td>
+                <td class="code"></td>
+                <td class="name">block</td>
+                <td class="descri">Elements take up the full width of their container with line breaks before and after.</td>
+                <td class="note">height and width ARE adjustable</td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">inline</td>
+                <td class="descri">Elements ake up as little space as possible, flow horizontally.</td>
+                <td class="note">height and width ARE NOT adjustable</td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">inline-block</td>
+                <td class="descri">Elements can appear next to each other.</td>
+                <td class="note">height and width ARE adjustable</td>
+            </tr>
+            <tr>
+                <td class="code">float:</td>
+                <td class="name"></td>
+                <td class="descri">Determines how far left or how far right an element should float within its parent element. </td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">V</td>
-                <td class="code">&lt;br&gt;</td>
-                <td class="name">Line Break</td>
-                <td class="descri">Creates a line break in text and requires only an opening tag. Self-closing.</td>
+                <td class="code"></td>
+                <td class="name">left</td>
+                <td class="descri">Content will float to the left side of the container.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;em&gt;</td>
-                <td class="name">Emphasis</td>
-                <td class="descri">Emphasizes text and browsers will usually italicize the emphasized text by default.</td>
+                <td class="code"></td>
+                <td class="name">right</td>
+                <td class="descri">Content will float to the right side of the container.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;strong&gt;</td>
-                <td class="name">Strong</td>
-                <td class="descri">Highlights important or urgent text and browsers will normally render this highlighted text in bold.</td>
+                <td class="code">clear:</td>
+                <td class="name"></td>
+                <td class="descri">Specifies how an element should behave when it bumps into another element within the same containing element.</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td colspan= "5" class="tabsec">Link making</td>
-            </tr>
-            <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;a href="link"&gt;</td>
-                <td class="name">Anchor</td>
-                <td class="descri">Creates hyperlinks on what's linked inbetween opening and closing tag. Can be internal with #id instead of link</td>
+                <td class="code"></td>
+                <td class="name">left</td>
+                <td class="descri">No elements within the same container are allowed to float on the left side of this element.</td>
                 <td class="note"></td>
             </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">right</td>
+                <td class="descri">No elements within the same container are allowed to float on the right side of this element.</td>
+                <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;a target=""&gt;</td>
-                <td class="name">Target attribute</td>
-                <td class="descri">Specifies where a hyperlink should be opened. _blank being new tab.</td>
+                <td class="code"></td>
+                <td class="name">both</td>
+                <td class="descri">No elements within the same container are allowed to float on either side of this element.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">none</td>
+                <td class="descri">Elements within the same container are allowed to float on both side of this element.</td>
                 <td class="note"></td>
             </tr>
         </tbody>
     </table>
     </div>
- 
-    <h2 id="fontstag">Fonts styling</h2>
-    <div class="table-wrapper">
+
+    <h2 id="flextag">Flexbox</h2>
+    <div class="table-wrapper flextag">
     <table>
         <thead>
             <tr>
-                <th class="s_c">S-C</th>
+                <th class="code">Property</th>
+                <th class="name">Values</th>
+                <th class="descri">Description</th>
+                <th class="note">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="code">display:</td>
+                <td class="name"></td>
+                <td class="descri">Determines the type of render block for an element.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">flex</td>
+                <td class="descri">Sets an HTML element as a block level flex container which takes the full width of its parent container</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">inline-flex</td>
+                <td class="descri">Sets an HTML element as an inline flex container which takes only the required space for the content.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">flex-direction:</td>
+                <td class="name"></td>
+                <td class="descri">Specifies how flex items are placed in the flex container. Vertically or horizontally.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">flex-wrap:</td>
+                <td class="name"></td>
+                <td class="descri">Specifies whether flex items should wrap or not. Becomes a priority over shrinking.</td>
+                <td class="note">Applies to flex items only.</td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Justify content</td>
+            </tr>
+            <tr>
+                <td class="code">justify-content:</td>
+                <td class="name"></td>
+                <td class="descri">Defines how the space is distributed between and around content items along the main-axis of their container. </td>
+                <td class="note">(horizontally)</td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">flex-start</td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">flex-end</td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">center</td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">space-between</td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">space-around</td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Flex properties</td>
+            </tr>
+            <tr>
+                <td class="code">flex-grow:</td>
+                <td class="name"></td>
+                <td class="descri">Allows flex items to grow as the parent container increases in size horizontally.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">flex-shrink:</td>
+                <td class="name"></td>
+                <td class="descri">Allows flex items to shrink as the parent container decreases in size horizontally.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">flex-basis:</td>
+                <td class="name"></td>
+                <td class="descri">Sets the initial base size for a flex item before any other space is distributed according to other flex properties.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code">flex:</td>
+                <td class="name"></td>
+                <td class="descri">Grow, shrink and basis declared on one line.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Flex-wraps</td>
+            </tr>
+            <tr>
+                <td class="code">flex-flow:</td>
+                <td class="name"></td>
+                <td class="descri">Provides a shorthand for the properties flex-direction and flex-wrap. </td>
+                <td class="note">Applies to flex items only.</td>
+            </tr>
+            <tr>
+                <td class="code">align-content:</td>
+                <td class="name"></td>
+                <td class="descri">Modifies the behavior of the flex-wrap property. It determines how to space rows along the cross axis</td>
+                <td class="note">(vertically)</td>
+            </tr>
+            <tr>
+                <td class="code">align-items:</td>
+                <td class="name"></td>
+                <td class="descri">Used to align flex items vertically within a parent container.</td>
+                <td class="note"></td>
+            </tr>
+        
+        </tbody>
+    </table>
+    </div>
+ 
+    <h2 id="buttonstag">Links and Buttons</h2>
+    <div class="table-wrapper buttonstag">
+    <table>
+        <thead>
+            <tr>
                 <th class="code">Tag</th>
                 <th class="name">Name</th>
                 <th class="descri">Description</th>
@@ -272,76 +518,68 @@
         </thead>
         <tbody>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;table&gt;</td>
-                <td class="name">Table Element</td>
-                <td class="descri">Used to represent a two-dimensional table made of rows and columns.</td>
-                <td class="note">Can't have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+                <td colspan= "5" class="tabsec">States of a link</td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;tr&gt;</td>
-                <td class="name">Table Row</td>
-                <td class="descri">Used to add rows to a table before adding table data or inside table headings</td>
+                <td class="code">:normal</td>
+                <td class="name">(not clicked)</td>
+                <td class="descri"></td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;th&gt;</td>
-                <td class="name">Table Heading</td>
-                <td class="descri">Used to add titles to rows and columns of a table</td>
+                <td class="code">:hover</td>
+                <td class="name"></td>
+                <td class="descri">(Does not apply to mobile devices due to the lack of a cursor.)</td>
                 <td class="note"></td>
             </tr>
             <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;td&gt;</td>
-                <td class="name">Table Data</td>
-                <td class="descri">Used to add a cell of data to a table.</td>
+                <td class="code">:active</td>
+                <td class="name">(clicked)</td>
+                <td class="descri"></td>
                 <td class="note"></td>
             </tr>
             <tr>
+                <td class="code">:visited</td>
+                <td class="name"></td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td colspan= "5" class="tabsec">Tooltips</td>
+            </tr> 
+            <tr>
+                <td class="code">cursor:</td>
+                <td class="name"></td>
+                <td class="descri">Used to change the appearance of the mouse cursor when hovering over an element.</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">Skeumorphism</td>
+                <td class="descri">Replicating or imitating real-life counterparts with UI elements.
+                </td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="code"></td>
+                <td class="name">Flat Design</td>
+                <td class="descri">Uses simplicity and lack of clutter for its UI elements.</td>
+                <td class="note"></td>
+            </tr>
+            <!--
+            <tr>
+                <td class="code"></td>
+                <td class="name"></td>
+                <td class="descri"></td>
+                <td class="note"></td>
+            </tr>
+<tr>
                 <td colspan= "5" class="tabsec">Structure of a table</td>
             </tr>
-                <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;thead&gt;</td>
-                <td class="name">Table Head element</td>
-                <td class="descri">Defines the headings of table columns encapsulated in table rows.</td>
-                <td class="note"></td>
-            </tr>
-                <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;tbody&gt;</td>
-                <td class="name">Table Body element</td>
-                <td class="descri">Is a semantic element that will contain all table data other than table heading and table footer content.</td>
-                <td class="note"></td>
-            </tr>
-                <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;tfoot&gt;</td>
-                <td class="name">Table Foot element</td>
-                <td class="descri">Uses table rows to give footer content or to summarize content at the end of a table.</td>
-                <td class="note"></td>
-            </tr>
-            <tr>
-                <td colspan= "5" class="tabsec">Expansion of cells</td>
-            </tr>
-            <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;colspan&gt;</td>
-                <td class="name">Column Span</td>
-                <td class="descri">Defines how many columns a td element should span.</td>
-                <td class="note"></td>
-            </tr>
-            <tr>
-                <td class="s_c">X</td>
-                <td class="code">&lt;rowspan&gt;</td>
-                <td class="name">Row Span</td>
-                <td class="descri">Defines how many rows a td element should span.</td>
-                <td class="note"></td>
-            </tr>
+            -->   
         </tbody>
     </table>
+    <p>
     </div>
 </body>
 

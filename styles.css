@@ -1,3 +1,15 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
 body {
     margin: 0;
     height: 100vh;
@@ -20,103 +32,28 @@ body::before {
     z-index: -1;
 }
 
-.table-wrapper {
-    border-radius: 15px;
-    overflow: hidden;
-    border: 5px solid green;
-    display: inline-block;
-}
 
-table {
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-th {
-    padding: 5px;
-    text-align: center;
-    min-width: 35px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-th.s_c {
-    border-bottom: 3px darkolivegreen solid;
-}
-
-th.code {
-    border-right: 3px darkolivegreen solid;
-    border-left: 3px darkolivegreen solid;
-    border-bottom: 3px darkolivegreen solid;
-}
-
-th.name {
-    border-right: 3px darkolivegreen solid;
-    border-left: 3px darkolivegreen solid;
-    border-bottom: 3px darkolivegreen solid;
-}
-
-th.descri {
-    border-right: 3px darkolivegreen solid;
-    border-left: 3px darkolivegreen solid;
-    border-bottom: 3px darkolivegreen solid;
-}
-
-th.note {
-    border-bottom: 3px darkolivegreen solid;
-}
-
-td {
-    border: 1px darkolivegreen solid;
-    text-align: left;
-    padding: 5px;
-    border-bottom: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-}
-
-td.s_c {
-    border-left: none;
-}
-
-td.note {
-    border-right: none;
-}
-
-.s_c {
-    text-align: center;
-}
-
-.code {
-    min-width: 105px;
-}
-
-.name {
-    min-width: 75px;
-    padding: 10px;
-}
-
-.descri {
-    width: 800px;
-}
-
-.note {
-    width: 150px;
-}
-
-.tabsec {
-    border-left: none;
-    border-right: none;
-    font-weight: bold;
-    text-align: left;
-}
+  /* 2. Typography Styles
+  ======================================== */
 
 a {
     box-shadow: 10px 5px 5px greenyellow;
     ;
 }
 
-.breadcrumb {
+.bold {
+    font-weight: bold;
+}
+
+  /* 3. Structure Styles
+  ======================================== */
+
+
+  /* 4. Modules Styles
+  ======================================== */
+
+  /* Site Breadcrumb Navigation */
+  .breadcrumb {
     text-align: left;
 }
 
@@ -168,3 +105,110 @@ a {
 .breadcrumb a:hover::after {
     border-left-color: greenyellow;
 }
+
+  
+  /* 5. Component Styles
+  ======================================== */
+
+  /* Tableaux */
+  
+  .table-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid green;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    padding: 5px;
+    text-align: center;
+    min-width: 35px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+th.code {
+    width: 135px;
+    border-bottom: 3px darkolivegreen solid;
+}
+
+th.name {
+    width: 145px;
+    border-right: 3px darkolivegreen solid;
+    border-left: 3px darkolivegreen solid;
+    border-bottom: 3px darkolivegreen solid;
+}
+
+th.descri {
+    border-right: 3px darkolivegreen solid;
+    border-left: 3px darkolivegreen solid;
+    border-bottom: 3px darkolivegreen solid;
+}
+
+th.note {
+    width: 135;
+    border-bottom: 3px darkolivegreen solid;
+}
+
+td {
+    border: 1px darkolivegreen solid;
+    text-align: left;
+    padding: 5px;
+    border-bottom: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+td.note {
+    border-right: none;
+}
+
+.s_c {
+    text-align: center;
+}
+
+.code {
+    border-left: none;
+    min-width: 105px;
+}
+
+.name {
+    min-width: 75px;
+    padding: 10px;
+}
+
+.descri {
+    width: 800px;
+}
+
+.note {
+    width: 150px;
+}
+
+.tabsec {
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+    /* 6. Page Styles
+  ======================================== */
+
+
+
+
+
+
+
+
+
+    /* 7. INVISICLOAK
+  ======================================== */
