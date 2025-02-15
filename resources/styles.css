@@ -7,10 +7,60 @@
   6. Page Styles
 ======================================== */
 
+/* 0. Font Face
+======================================== */
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('/fonts/OpenDyslexic-Regular.woff2') format('woff2'),
+         url('/fonts/OpenDyslexic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('/fonts/OpenDyslexic-Bold.woff2') format('woff2'),
+         url('/fonts/OpenDyslexic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('/fonts/OpenDyslexic-Italic.woff2') format('woff2'),
+         url('/fonts/OpenDyslexic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('/fonts/OpenDyslexic-Bold-Italic.woff2') format('woff2'),
+         url('/fonts/OpenDyslexic-Bold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
 /* 1. Global Styles
 ======================================== */
 
+
 body {
+
+    font-family: 'OpenDyslexic', Arial, sans-serif;
     margin: 0;
     height: 100vh;
     color: white;
@@ -47,6 +97,11 @@ main {
 a {
     color: black;
     text-decoration: none;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+
+.resume {
+    color: olive;
 }
 
 .bold {
@@ -55,7 +110,14 @@ a {
 
   /* 3. Structure Styles
   ======================================== */
-
+nav ol{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .portfolio{
     margin: 0 auto;
     display: flex;
@@ -155,6 +217,35 @@ button:active {
   padding-bottom: 8px;
 }
 
+/* Boutons de table des matiere*/
+
+.button {
+    background: #7fd12f;
+    border: 1px solid #629921;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 #8ff339;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    outline: 0;
+    padding: 10px 35px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #629921;
+    background: linear-gradient(to bottom, #7fd12f 0%, #629921 100%);
+    transition: padding 50ms ease-in-out, border-top-width 50ms ease-in-out, box-shadow 150ms ease-in-out;
+  }
+  .button:hover {
+    background: #88d602;
+    background: linear-gradient(to bottom, #88d602 0%, #66a023 100%);
+    box-shadow: inset 0 1px 0 #8ff339, 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  .button:active {
+    border-top-width: 2px;
+    box-shadow: none;
+    padding-bottom: 8px;
+  }
 
 
   /* Tableaux */
@@ -176,7 +267,7 @@ th {
     text-align: center;
     min-width: 35px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 
@@ -208,7 +299,7 @@ td {
     text-align: left;
     padding: 5px;
     border-bottom: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
     font-size: 18px;
 }
 
