@@ -1,0 +1,141 @@
+header {
+    width:100%;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+/* Header part*/
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 10px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: underline;
+    color: antiquewhite
+}
+
+#logo {
+    height: 50px;
+    margin: 10px;
+}
+
+/* Main section*/
+
+main {
+    background-image: url(img-mission-background.jpg);
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission {
+    background-color: black;
+}
+
+.featured {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured article {
+    width: 100%;
+    text-align: center;
+}
+
+.menu {
+    width: 30%;
+    min-width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.reference {
+    height: 200px;
+}
+
+section.locations {
+    background-image: url(img-locations-background.jpg);
+    min-height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.locations-title h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.location h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.location {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    align-content: center;
+    justify-content: center;
+}
+.adress {
+    line-height: 65px;
+}
+#copyright {
+    text-align: left;
+    margin-left: 20px;
+}
