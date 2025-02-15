@@ -129,11 +129,11 @@ section.locations {
     flex-direction: column;
     height: 300px;
     width: 300px;
-    align-content: center;
+    align-content: stretch;
     justify-content: center;
 }
 .adress {
-    line-height: 65px;
+    line-height: 300%;
 }
 #copyright {
     text-align: left;
